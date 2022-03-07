@@ -20,7 +20,7 @@ provisioner "file" {
 
 }
 
-provisioner "remote_exec" {
+provisioner "remote-exec" {
   inline = [
     "chmod +x /tmp/installNginx.sh",
     "sudo sed -i -e 's/\r$//' /tmp/installNginx.sh",
