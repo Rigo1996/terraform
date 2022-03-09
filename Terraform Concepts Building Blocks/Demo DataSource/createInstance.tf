@@ -21,7 +21,7 @@ resource "aws_instance" "FirstInstance" {
   availability_zone = data.aws_availability_zones.available.names[1]
 
   provisioner "local-exec" {
-    command = "echo aws_instance.FirstInstance.private_ip >> my_private_ips.txt"
+    command = "echo ${aws_instance.FirstInstance.private_ip} >> my_private_ips.txt"
   
   }
   
