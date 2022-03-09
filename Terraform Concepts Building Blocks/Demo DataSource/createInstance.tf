@@ -33,11 +33,5 @@ resource "aws_instance" "FirstInstance" {
   output "public_ip" {
     value = aws_instance.FirstInstance.public_ip
   }
-
-
-
-
-
-
 }
   
