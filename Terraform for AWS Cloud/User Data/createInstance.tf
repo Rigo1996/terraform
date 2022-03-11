@@ -12,7 +12,7 @@ resource "aws_instance" "FirstInstance" {
   key_name      =  aws_key_pair.levelup_key.key_name
 
 
-  user_data = file("installapche.sh")
+  user_data = file("installapache.sh")
 
 
 
