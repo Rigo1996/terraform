@@ -38,7 +38,7 @@ resource "aws_db_instance" "levelup-mariadb" {
   password             = "mariadb141"
   db_subnet_group_name = aws_db_subnet_group.mariadb-subnets.name
   parameter_group_name = aws_db_parameter_group.levelup-mariadb-parameters.name
-  multi_az = false 
+  multi_az = "false"
   vpc_security_group_ids = [aws_security_group.allow-mariadb.id]
   storage_type = "gp2"
   backup_retention_period = 30
