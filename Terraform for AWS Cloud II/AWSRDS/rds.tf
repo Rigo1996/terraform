@@ -33,7 +33,7 @@ resource "aws_db_instance" "levelup-mariadb" {
   instance_class       = "db.t2.micro"
   identifier           = "mariadb"
 
-  name                 = "mydb"
+  name                 = "mariadb"
   username             = "root"
   password             = "mariadb141"
   db_subnet_group_name = aws_db_subnet_group.mariadb-subnets.name
