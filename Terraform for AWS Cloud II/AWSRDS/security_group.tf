@@ -27,7 +27,7 @@ resource "aws_security_group" "allow-levelup-ssh" {
 #Security Group for RDS
 
 resource "aws_security_group" "allow-mariadb" {
-  name        = "allow-levelup-ssh"
+  name        = "allow-mariadb"
   description = "Allow TLS inbound traffic"
   vpc_id      = aws_vpc.levelupvpc.id
 
