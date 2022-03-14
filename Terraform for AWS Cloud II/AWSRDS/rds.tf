@@ -45,7 +45,8 @@ resource "aws_db_instance" "levelup-mariadb" {
   availability_zone = aws_subnet.levelupvpc-private-1.availability_zone
   skip_final_snapshot  = true
 
-  tags {
+  tags = {
       Name = "levelup-mariadb"
   }
 }
+
